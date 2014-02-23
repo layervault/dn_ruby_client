@@ -3,3 +3,5 @@ rvm:
   - 1.9.3
   - 2.0.0
   - 2.1.0
+env:
+  - DESIGNER_NEWS_ACCESS_TOKEN=bootsandcats DESIGNER_NEWS_LOGIN=kelly@layervault.com DESIGNER_NEWS_PASSWORD=grapes DESIGNER_NEWS_API_ENDPOINT=http://localhost:3000/api/v1
