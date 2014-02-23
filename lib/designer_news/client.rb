@@ -7,9 +7,11 @@ require 'designer_news/mixins/configurable'
 require 'designer_news/mixins/connection'
 
 require 'designer_news/client/users'
+require 'designer_news/client/stories'
 
 require 'designer_news/model'
 require 'designer_news/user'
+require 'designer_news/story'
 
 module DesignerNews
 
@@ -21,6 +23,7 @@ module DesignerNews
     include DesignerNews::Connection
 
     include DesignerNews::Client::Users
+    include DesignerNews::Client::Stories
 
     def initialize(options={})
       DesignerNews::Configurable.keys.each do |key|
