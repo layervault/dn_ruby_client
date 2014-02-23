@@ -1,11 +1,15 @@
 require 'faraday'
 require 'multi_json'
+require 'json'
 
 require 'designer_news/mixins/authentication'
 require 'designer_news/mixins/configurable'
 require 'designer_news/mixins/connection'
 
+require 'designer_news/client/users'
+
 require 'designer_news/model'
+require 'designer_news/user'
 
 module DesignerNews
 
@@ -15,6 +19,8 @@ module DesignerNews
     include DesignerNews::Authentication
     include DesignerNews::Configurable
     include DesignerNews::Connection
+
+    include DesignerNews::Client::Users
 
     def initialize(options={})
       DesignerNews::Configurable.keys.each do |key|

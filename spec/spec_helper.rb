@@ -48,8 +48,8 @@ RSpec.configure do |c|
   end
 end
 
-def layervault_url(url)
-  url =~ /^http/ ? url : "#{ENV['DESIGNER_NEWS_API_ENDPOINT']}#{url}"
+def designer_news_url(url)
+  url =~ /^http/ ? url : "#{ENV['DESIGNER_NEWS_API_ENDPOINT']}/#{url}"
 end
 
 def random_md5

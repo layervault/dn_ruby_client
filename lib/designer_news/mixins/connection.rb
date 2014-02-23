@@ -2,7 +2,7 @@ module DesignerNews
   module Connection
     def request(method, path, data, options={})
       @last_response = response = connection.send(method, URI.encode(path.to_s), data, options)
-      response.body
+      JSON.parse(response.body)
     end
 
     def connection

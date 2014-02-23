@@ -67,7 +67,7 @@ DesignerNews.client.api_endpoint = 'api_endpoint'
 # You Designer News API access token
 ENV['DESIGNER_NEWS_ACCESS_TOKEN']
 
-# The API Endpoint you wish to target calls against (defaults to https://api.layervault.com/api/v1/)
+# The API Endpoint you wish to target calls against (defaults to https://api-news.layervault.com/api/v1/)
 ENV['DESIGNER_NEWS_API_ENDPOINT']
 
 # Defaults to Designer News Ruby Gem #{DesignerNews::VERSION}
