@@ -82,12 +82,16 @@ You should set the User agent to include your email address so that in the event
 
 ## Making API calls
 
-You can use the `DesignerNews.client.<api_operation>` methods to call the API to perform actions. Alternatively, each API object has simple object model that allows you to say:
+You should instantiate a `DesignerNews::Client` object and then make calls from that:
 
-``` ruby
-DesignerNews.client.access_token = 'access_token'
-p = DesignerNews::Organization.for('layervault')
-p.create_project('my new project')
+```ruby
+client = DesignerNews::Client.new({
+  access_token: 'your_access_token',
+  api_endpoint: 'your_api_endpoint'
+})
+
+client.story(123)
+client.upvote_story(123)
 ```
 
 And so on.
