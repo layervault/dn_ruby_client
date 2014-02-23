@@ -96,14 +96,6 @@ client.upvote_story(123)
 
 And so on.
 
-### Simple Object Model
-
-There's a very simple object model provided by classes that implement [Hashie](https://github.com/intridea/hashie) objects that wrap the JSON responses from the ```DesignerNews.client``` interface. The objects mostly all follow a ```.for``` pattern that accepts the appropriate number of arguments for the level of nesting the object represents.
-
-#### Associations
-
-When using the simple object model, associations will be hydrated into the correct child objects for the immediate child relationships only, allowing a simple level of traversal down the object model hierarchy. There is no lazy loding support that will automatically hydrated any deeper associations - you must perform new queries.
-
 ## Local Development
 
 Coming soon.
