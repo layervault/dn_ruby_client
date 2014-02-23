@@ -1,5 +1,7 @@
 # Designer News Ruby API Client
 
+[![Travis CI](https://travis-ci.org/layervault/dn_ruby_client.png?branch=master)](https://travis-ci.org/layervault/dn_ruby_client)
+
 This is the Ruby client library that wraps the [Designer News API](http://developers.news.layervault.com). It assumes you have used another oAuth 2 library to obtain and manage a valid access token. It is based on
 the [Ruby gem for the LayerVault API](https://github.com/layervault/layervault_ruby_client).
 
