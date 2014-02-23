@@ -106,6 +106,35 @@ Coming soon.
 
 ## Client Methods Summary
 
-### General
-  - DesignerNews.client.me
+#### User Info
 
+```
+#me
+```
+
+#### Stories
+
+```
+#story(story_id)
+#stories(page_number=1)
+#recent_stories(page_number=1)
+#search_stories(query)
+#upvote_story(story_id)
+#reply_to_story(story_id, comment)
+```
+
+#### Comments
+
+```
+#comment(comment_id)
+#upvote_comment(comment_id)
+#reply_to_comment(comment_id, comment)
+```
+
+#### MOTDs
+
+```
+#motd
+#upvote_motd
+#downvote_motd
+```
